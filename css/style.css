@@ -139,6 +139,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .menu {
   position: relative;
+  /* -----------------------------------------------------------------------------
+
+    HAMBURGER ICONS COMPONENT
+
+  ----------------------------------------------------------------------------- */
+  /**
+   * Toggle Switch Globals
+   *
+   * All switches should take on the class `c-hamburger` as well as their
+   * variant that will give them unique properties. This class is an overview
+   * class that acts as a reset for all versions of the icon.
+   */
+  /**
+   * Style 1
+   *
+   * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+   * Nothing too fancy, simple transition.
+   */
+  /* active state, i.e. menu open */
+  /**
+   * Style 2
+   * 
+   * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+   * down to center and transform into an "x".
+   */
+  /* active state, i.e. menu open */
+  /**
+   * Style 3
+   *
+   * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+   * arrow. Usually indicates an off canvas menu sliding in from left that
+   * will be close on re-click of the icon.
+   */
+  /* active state, i.e. menu open */
+  /**
+   * Style 4
+   *
+   * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+   * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
+   * right that will be close on re-click of the icon.
+   */
+  /* active state, i.e. menu open */
 }
 .header .menu__body {
   height: 50px;
@@ -186,65 +228,168 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   z-index: 10;
 }
-.header .menu__icon {
-  height: 26px;
+.header .menu .c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   width: 50px;
-  background-color: #ffffff;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
   cursor: pointer;
+}
+.header .menu .c-hamburger:focus {
+  outline: none;
+}
+.header .menu .c-hamburger span {
+  display: block;
   position: absolute;
-  top: 12px;
+  top: 23.5px;
+  left: 7px;
+  right: 7px;
+  height: 3px;
+  background: #00a2d1;
+}
+.header .menu .c-hamburger span::before,
+.header .menu .c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00a2d1;
+  content: "";
+}
+.header .menu .c-hamburger span::before {
+  top: -11px;
+}
+.header .menu .c-hamburger span::after {
+  bottom: -11px;
+}
+.header .menu .c-hamburger--rot {
+  background-color: #28aadc;
+}
+.header .menu .c-hamburger--rot span {
+  transition: transform 0.3s;
+}
+.header .menu .c-hamburger--rot.is-active {
+  background-color: #166888;
+}
+.header .menu .c-hamburger--rot.is-active span {
+  transform: rotate(90deg);
+}
+.header .menu .c-hamburger--htx {
+  background-color: #ffffff;
+}
+.header .menu .c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+.header .menu .c-hamburger--htx span::before,
+.header .menu .c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+.header .menu .c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+.header .menu .c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+.header .menu .c-hamburger--htx.is-active {
+  background-color: white;
+}
+.header .menu .c-hamburger--htx.is-active span {
+  background: none;
+}
+.header .menu .c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.header .menu .c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.header .menu .c-hamburger--htx.is-active span::before,
+.header .menu .c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+.header .menu .c-hamburger--htla {
+  background-color: #32dc64;
+}
+.header .menu .c-hamburger--htla span {
+  transition: transform 0.3s;
+}
+.header .menu .c-hamburger--htla span::before {
+  transform-origin: top right;
+  transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+.header .menu .c-hamburger--htla span::after {
+  transform-origin: bottom right;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+.header .menu .c-hamburger--htla.is-active {
+  background-color: #19903c;
+}
+.header .menu .c-hamburger--htla.is-active span {
+  transform: rotate(180deg);
+}
+.header .menu .c-hamburger--htla.is-active span::before,
+.header .menu .c-hamburger--htla.is-active span::after {
+  width: 50%;
+}
+.header .menu .c-hamburger--htla.is-active span::before {
+  top: 0;
+  transform: translateX(21px) translateY(1.5px) rotate(45deg);
+}
+.header .menu .c-hamburger--htla.is-active span::after {
+  bottom: 0;
+  transform: translateX(21px) translateY(-1.5px) rotate(-45deg);
+}
+.header .menu .c-hamburger--htra {
+  background-color: #ff9650;
+}
+.header .menu .c-hamburger--htra span {
+  transition: transform 0.3s;
+}
+.header .menu .c-hamburger--htra span::before {
+  transform-origin: top left;
+  transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+.header .menu .c-hamburger--htra span::after {
+  transform-origin: bottom left;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+.header .menu .c-hamburger--htra.is-active {
+  background-color: #e95d00;
+}
+.header .menu .c-hamburger--htra.is-active span {
+  transform: rotate(180deg);
+}
+.header .menu .c-hamburger--htra.is-active span::before,
+.header .menu .c-hamburger--htra.is-active span::after {
+  width: 50%;
+}
+.header .menu .c-hamburger--htra.is-active span::before {
+  top: 0;
+  transform: translateX(-3px) translateY(1.5px) rotate(-45deg);
+}
+.header .menu .c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  transform: translateX(-3px) translateY(-1.5px) rotate(45deg);
+}
+.header .menu .menu__icon {
+  position: absolute;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-.header .menu__icon span {
-  width: 36px;
-  height: 3px;
-  background-color: #00a2d1;
-  transition: all 0.3s ease 0s;
-}
-.header .menu__icon_active {
-  justify-content: center;
-}
-.header .menu__icon_active span {
-  position: absolute;
-}
-.header .menu__icon_active :first-child {
-  transform: rotate(45deg);
-}
-.header .menu__icon_active :last-child {
-  transform: rotate(-45deg);
-}
-.header .menu__icon_active :nth-child(2) {
-  transform: scale(0);
-}
-.header .menu__burger-line {
-  display: block;
-  width: 72%;
-  height: 6%;
-  background-color: #00a2d1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  transition: all 0.3s ease 0s;
-}
-.header .menu__burger-line:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #00a2d1;
-  position: absolute;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: 3;
-  transition: all 0.3s ease 0s;
 }
 
 /* Слайдер */
@@ -370,10 +515,9 @@ h1, h2, h3, h4, h5, h6 {
 .price__note {
   color: #00a2d1;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   font-size: 20px;
-  font-weight: 400;
   line-height: 1.5;
   padding-bottom: 10px;
 }

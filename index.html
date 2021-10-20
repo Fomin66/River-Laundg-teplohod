@@ -38,9 +38,10 @@
 <!--            todo: html меню взять из текущей версии-->
             <div class="header__menu menu">
                 <div class="menu__body">
-<!--                    todo: переделать бургер на относительных единицах-->
                     <div class="menu__icon">
-                        <span></span><span></span><span></span>
+                        <button class="c-hamburger c-hamburger--htx">
+                            <span>toggle menu</span>
+                        </button>
                     </div>
                     <div class="menu-navigation-container">
                         <ul class="menu"><li class="first leaf menu-item-222"><a href="/" title="" class="active">Главная</a></li>
@@ -63,32 +64,32 @@
 <!--                slider__item-->
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/01.jpg" alt="">
+                        <img data-lazy="img/gallery/01.jpg" src="" alt="">
                     </div>
                 </div>
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/02.jpg" alt="">
+                        <img data-lazy="img/gallery/02.jpg" src="" alt="">
                     </div>
                 </div>
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/03.jpg" alt="">
+                        <img data-lazy="img/gallery/03.jpg" src="" alt="">
                     </div>
                 </div>
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/04.jpg" alt="">
+                        <img data-lazy="img/gallery/04.jpg" src="" alt="">
                     </div>
                 </div>
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/05.jpg" alt="">
+                        <img data-lazy="img/gallery/05.jpg" src="" alt="">
                     </div>
                 </div>
                 <div class="slider__item">
                     <div class="slider__img">
-                        <img data-lazy="img/gallery/06.jpg" alt="">
+                        <img data-lazy="img/gallery/06.jpg" src="" alt="">
                     </div>
                 </div>
             </div>
@@ -181,7 +182,6 @@
             </div>
         </section>
     </div>
-
 </div>
 <!-- Подключаем jQuery -->
 <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -189,5 +189,7 @@
 <script src="js/slick.min.js"></script>
 <!-- Подключаем файл JS скриптов -->
 <script src="js/script.js"></script>
+<!-- Cкрипт ,бургера -->
+<script src="js/menu-hamburger.js"></script>
 </body>
 </html>
