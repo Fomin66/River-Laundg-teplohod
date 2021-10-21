@@ -3,7 +3,7 @@ $(document).ready(function () {
         $('.menu__icon').toggleClass('menu__icon_active');
         $('.menu__body').toggleClass('menu__body_active');
         $('body').toggleClass('lock');
-    })
+    });
     $('.slider__body').slick({
         arrows:false,
         dots:false,

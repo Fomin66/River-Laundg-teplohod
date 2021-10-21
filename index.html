@@ -7,6 +7,9 @@
     <title>Официальная аренда теплохода "Ривер Лаундж" | Теплоход "Ривер Лаунж"</title>
     <!-- Подключаем CSS -->
     <link rel="stylesheet" href="css/style.css"/>
+<!--todo добавить стили с сайта-->
+<!--    https://river-launge.ru/sites/all/themes/shablon/css/style.css-->
+<!--    https://river-launge.ru/sites/all/themes/shablon/css/media.css-->
     <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width">
@@ -35,7 +38,6 @@
                     </div>
                 </div>
             </div>
-<!--            todo: html меню взять из текущей версии-->
             <div class="header__menu menu">
                 <div class="menu__body">
                     <div class="menu__icon">
@@ -45,11 +47,11 @@
                     </div>
                     <div class="menu-navigation-container">
                         <ul class="menu"><li class="first leaf menu-item-222"><a href="/" title="" class="active">Главная</a></li>
-                            <li class="leaf menu-item-495"><a href="/arenda-teplohoda-river-launzh-river-lounge-v-moskve">Аренда</a></li>
-                            <li class="leaf menu-item-507"><a href="/rechnye-progulki-na-teplohode-river-launzh-river-lounge">Прогулки</a></li>
-                            <li class="leaf menu-item-555"><a href="/menyu-rechnyh-progulok-na-teplohode-river-launzh">Меню</a></li>
-                            <li class="leaf menu-item-505"><a href="/fotografii-i-3d-tur-teplohoda-river-launzh">Фотографии</a></li>
-                            <li class="last leaf menu-item-506"><a href="/kontakty-teplohoda-river-laundzh">Контакты</a></li>
+                            <li class="leaf menu-item-495"><a href="#">Аренда</a></li>
+                            <li class="leaf menu-item-507"><a href="#">Прогулки</a></li>
+                            <li class="leaf menu-item-555"><a href="#">Меню</a></li>
+                            <li class="leaf menu-item-505"><a href="#">Фотографии</a></li>
+                            <li class="last leaf menu-item-506"><a href="#">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +59,6 @@
         </div>
     </div>
     <div class="content">
-<!--        todo: доделать слайдер-->
         <section class="slider">
 <!--            slider-->
             <div class="slider__body">
@@ -102,50 +103,50 @@
         <section class="advantages">
             <div class="container">
                 <ul class="advantages__list">
-                    <li class="advantages__item">Премиум класс</li>
-                    <li class="advantages__item">Авторское меню</li>
-                    <li class="advantages__item">Вместимость до 120 человек</li>
+                    <li class="advantages__item">ПАНОРАМНОЕ ОСТЕКЛЕНИЕ САЛОНА</li>
+                    <li class="advantages__item">ПРЕМИУМ КЛАСС</li>
+                    <li class="advantages__item">ПОЛНОСТЬЮ ОТКРЫТАЯ ВЕРХНЯЯ ПАЛУБА</li>
                 </ul>
             </div>
         </section>
-        <section class="price">
-            <div class="price__body">
+        <section class="price-first">
+            <div class="price-first__body">
                 <div class="container">
-                    <h2 class="price__title title-h2">Стоимость аренды теплохода</h2>
-<!--                    todo: переименовать в сабтитле-->
-                    <div class="price__note">на 5 часов с банкетом</div>
+                    <h2 class="price-first__title title-h2">Стоимость аренды теплохода</h2>
+                    <div class="price-first__subtitle">на 5 часов с банкетом</div>
                 </div>
-                <table class="price__table table-prise">
-                    <tr>
-                        <th>День недели</th>
-                        <th>Цена</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Понедельник</p>
-                            <p>Вторник</p>
-                            <p>Среда</p>
-                            <p>Четверг</p>
-                        </td>
-                        <td>275 000 Р</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Пятница</p>
-                            <p>Суббота</p>
-                            <p>Воскресенье</p>
-                        </td>
-                        <td>350 000 Р</td>
-                    </tr>
-                    <tr>
-                        <td>День Победы и День Города</td>
-                        <td>600 000 Р</td>
-                    </tr>
-                </table>
-<!--                :todo сделать дискрипшеен и ограничить по ширене таблици группировкой-->
-                <div class="price__restrictions">
-                    <p>Минимальная длительность аренды 5 часов.</p>
-                    <p>+ 10% от стоимости меню</p>
+                <div class="price-first__table-area table-area">
+                    <table class="table-area__table">
+                        <tr>
+                            <th>День недели</th>
+                            <th>Цена</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Понедельник</p>
+                                <p>Вторник</p>
+                                <p>Среда</p>
+                                <p>Четверг</p>
+                            </td>
+                            <td>275 000 Р</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Пятница</p>
+                                <p>Суббота</p>
+                                <p>Воскресенье</p>
+                            </td>
+                            <td>350 000 Р</td>
+                        </tr>
+                        <tr>
+                            <td>День Победы и День Города</td>
+                            <td>600 000 Р</td>
+                        </tr>
+                    </table>
+                    <div class="table-area__description">
+                        <p>Минимальная длительность аренды 5 часов.</p>
+                        <p>+ 10% от стоимости меню</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -181,6 +182,71 @@
                 </div>
             </div>
         </section>
+        <section class="price-second">
+            <div class="price-second__body">
+                <div class="container">
+                    <h2 class="price-second__title title-h2">Речные прогулки на теплоходе Ривер&nbsp;Лаундж</h2>
+                    <div class="price-second__row icons-row">
+                        <div class="icons-row__column">
+                            <figure class="icons-row__item">
+                                <div class="icons-row__icon">
+                                    <img src="img/icons/image-01.png" alt="Отдельный столик">
+                                </div>
+                                <figcaption><p>Отдельный</p><p>столик</p></figcaption>
+                            </figure>
+                        </div>
+                        <div class="icons-row__column">
+                            <figure class="icons-row__item">
+                                <div class="icons-row__icon">
+                                    <img src="img/icons/image-02.png" alt="Меню от шеф-повара">
+                                </div>
+                                <figcaption><p>Меню от шеф-</p><p>повара</p></figcaption>
+                            </figure>
+                        </div>
+                        <div class="icons-row__column">
+                            <figure class="icons-row__item">
+                                <div class="icons-row__icon">
+                                    <img src="img/icons/image-03.png" alt="Причал в центре">
+                                </div>
+                                <figcaption><p>Причал в </p><p>центре</p></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-second__table-area table-area">
+                    <table class="table-area__table">
+                        <tr>
+                            <th>Название</th>
+                            <th>Длительность</th>
+                            <th>Цена</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Прогулка по Москве-реке</p>
+                                <p>от Киевского вокзала</p>
+                                <p><span>12:00, 13:30, 17:30, 19:30</span></p>
+
+                            </td>
+                            <td>2 часа 10 мин.</td>
+                            <td>175-550Р</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Прогулка по Москве-реке</p>
+                                <p>от Киевского вокзала</p>
+                                <p><span>12:00, 13:30, 17:30, 19:30</span></p>
+                            </td>
+                            <td>2 часа 10 мин.</td>
+                            <td>175-550Р</td>
+                        </tr>
+                    </table>
+                    <div class="table-area__description">
+                        <p>Минимальная длительность аренды 5 часов.</p>
+                        <p>+ 10% от стоимости меню</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 <!-- Подключаем jQuery -->
@@ -189,7 +255,7 @@
 <script src="js/slick.min.js"></script>
 <!-- Подключаем файл JS скриптов -->
 <script src="js/script.js"></script>
-<!-- Cкрипт ,бургера -->
+<!-- Подключаем бургер -->
 <script src="js/menu-hamburger.js"></script>
 </body>
 </html>
