@@ -1,5 +1,6 @@
 .header{
   padding-top: 10px;
+  
   &__row{
     display: flex;
     justify-content: center;
@@ -9,6 +10,7 @@
     position: relative;
     text-align: center;
     overflow: hidden;
+
 
   }
   &__item{
@@ -50,6 +52,8 @@
       height: 100%;
     }
   }
+  //Подключение стилей меню-гамбургера
+  @import "components.hamburger";
   .menu{
     position: relative;
     &__body{
@@ -68,51 +72,54 @@
         left: 0;
         z-index: 1;
       }
-      .menu-navigation-container{
-        position: absolute;
-        width: 100%;
-        //ul меню
-        //todo: добавить опасити
-        .menu{
-          overflow: hidden;
-          visibility: hidden;
-          top: 50px;
-          transition: all 0.5s ease 0s;
-          &>li{
-            margin: 0;
-            width: 100%;
-            background: #1a365c;
-            &>a{
-              display: block;
-              width: 100%;
-              padding: 7px 0;
-              color: #fff;
-              border-radius: 0;
-              margin: 0;
-              text-align: center;
-              border-bottom: 1px solid #DDD;
-            }
-          }
-        }
-      }
       &_active{
         .menu-navigation-container{
           .menu{
-            visibility: visible;
-            display: block;
-            z-index: 10;
+
           }
         }
       }
     }
-    //Подключение стилей меню-гамбургера
-    @import "components.hamburger";
     .menu__icon{
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 2;
+    }
+  }
+}
+
+
+.menu-navigation-container{
+  position: absolute;
+  width: 100%;
+  .menu{
+    display: none;
+    overflow: hidden;
+    top: 50px;
+    transition: all 0.5s ease 0s;
+    &>li {
+      margin: 0;
+      width: 100%;
+      background: #1a365c;
+
+      & > a {
+        display: block;
+        width: 100%;
+        padding: 7px 0;
+        color: #fff;
+        border-radius: 0;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #DDD;
+      }
+    }
+  }
+  &_active{
+    .menu{
+      display: block;
+      z-index: 10;
     }
   }
 }
