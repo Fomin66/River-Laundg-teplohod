@@ -1,0 +1,63 @@
+.over-header{
+  padding-top: 10px;
+  z-index: 100;
+  &__row{
+    display: flex;
+    justify-content: center;
+  }
+  &__column{
+    flex: 0 0 33.333%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__phone{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #000;
+    flex-grow: 3;
+    justify-content: center;
+  }
+  @media (max-width: 400px)  {
+    &__phone{
+      font-size: 14px;
+    }
+  }
+  &__btn{
+    display: block;
+    background-color: #00a2d1;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+    flex: 0 1 auto;
+    width: 100%;
+  }
+  &__logo{
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    img{
+      object-fit:contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+
