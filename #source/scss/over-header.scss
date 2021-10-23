@@ -1,6 +1,7 @@
 .over-header{
   padding-top: 10px;
-  z-index: 100;
+  z-index: 10;
+  transition: all 0.5s ease 0s;
   &__row{
     display: flex;
     justify-content: center;
@@ -28,6 +29,7 @@
     color: #000;
     flex-grow: 3;
     justify-content: center;
+    transition: all 0.5s ease 0s;
   }
   @media (max-width: 400px)  {
     &__phone{
@@ -57,7 +59,13 @@
       height: 100%;
     }
   }
-
+&_active{
+  *{
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
 }
 
 
