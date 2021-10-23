@@ -98,6 +98,10 @@ body{
   //
   &__item{
     margin-bottom: 15px;
+    //todo разобраться как убрать маркер с !important
+    &::marker{
+      display: none;
+    }
     &:last-child{
       margin-bottom: 0;
     }
@@ -129,6 +133,7 @@ body{
     font-size: 18px;
     line-height: 1.5;
     font-style: italic;
+    font-family: $fontfamily;
     th{
       background-color: #00a2d1;
       color: white;
@@ -249,7 +254,14 @@ body{
   }
 }
 //========++++Стили страницы прогулки++++++==========
-
+.wrap-bot-header_in-ride{
+  padding-bottom: 5px;
+  border-bottom: #9fdced solid 2px;
+  .wrap #breadcrumbs>h2{
+    overflow: hidden;
+    height: 1px;
+  }
+}
 
 
 

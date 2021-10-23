@@ -7,10 +7,12 @@
     <title>Речные прогулки по Москве-реке на теплоходе Ривер Лаунж | Теплоход "Ривер Лаунж"</title>
     <meta name="description" content="Речные прогулки по Москве-реке на теплоходе Ривер Лаунж  от причала Киевский вокзал. Расписание и билеты на речные прогулки на теплоходе River Lounge на сайте в режиме онлайн.">
     <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="https://river-launge.ru/sites/all/themes/shablon/css/style.css">
+    <link rel="stylesheet" href="https://river-launge.ru/sites/all/themes/shablon/css/media.css">
     <link rel="stylesheet" href="css/style.css">
     <!--todo добавить стили с сайта-->
-    <!--    https://river-launge.ru/sites/all/themes/shablon/css/style.css-->
-    <!--    https://river-launge.ru/sites/all/themes/shablon/css/media.css-->
+    <!--    -->
+    <!--    -->
     <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width">
@@ -18,237 +20,78 @@
 <!-- Отображаемое тело страницы -->
 <body>
 <div class="wrapper">
-    <div class="header">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__column">
-                    <div class="header__item">
-                        <a class="header__phone" href="tel:+79261503536">8-926-150-35-36</a>
-                        <a class="header__btn" href="#">Аренда</a>
-                    </div>
-                </div>
-                <div class="header__column">
-                    <div class="header__logo">
-                        <img src="img/logo.png" alt='Теплоход "Ривер Лаундж"'>
-                    </div>
-                </div>
-                <div class="header__column">
-                    <div class="header__item">
-                        <a class="header__phone" href="tel:+79850348992">8-985-034-89-92</a>
-                        <a class="header__btn" href="ride.html">Билеты</a>
-                    </div>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+<!--                todo вынести в блок-->
+                <div class="over-header__logo">
+                    <img src="img/logo.png" alt='Теплоход "Ривер Лаундж"'>
                 </div>
             </div>
             <div class="header__menu menu">
+                <div class="menu__icon">
+                    <button class="c-hamburger c-hamburger--htx">
+                        <span>toggle menu</span>
+                    </button>
+                </div>
                 <div class="menu__body">
-                    <div class="menu__icon">
-                        <button class="c-hamburger c-hamburger--htx">
-                            <span>toggle menu</span>
-                        </button>
-                    </div>
-                    <div class="menu-navigation-container">
-                        <ul class="menu"><li class="first leaf menu-item-222"><a href="/" title="" class="active">Главная</a></li>
-                            <li class="leaf menu-item-495"><a href="#">Аренда</a></li>
-                            <li class="leaf menu-item-507"><a href="ride.html">Прогулки</a></li>
-                            <li class="leaf menu-item-555"><a href="#">Меню</a></li>
-                            <li class="leaf menu-item-505"><a href="#">Фотографии</a></li>
-                            <li class="last leaf menu-item-506"><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
+                    <ul class="menu__list">
+                        <li class="first leaf menu-item-222"><a href="index.html" title="" class="active">Главная</a></li>
+                        <li class="leaf menu-item-495"><a href="#">Аренда</a></li>
+                        <li class="leaf menu-item-507"><a href="ride.html">Прогулки</a></li>
+                        <li class="leaf menu-item-555"><a href="#">Меню</a></li>
+                        <li class="leaf menu-item-505"><a href="#">Фотографии</a></li>
+                        <li class="last leaf menu-item-506"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__item"></div>
+        </div>
+        <div class="wrap-wid wrap-bot-header_in-ride">
+            <div class="wrap">
+                <div id="breadcrumbs">
+                    <h2 class="element-invisible">Вы здесь</h2><div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#"><span class="inline odd first" typeof="v:Breadcrumb"><a href="https://river-launge.ru/" rel="v:url" property="v:title">Главная</a></span> <span class="delimiter">/</span> <span class="inline even last" typeof="v:Breadcrumb">Речные прогулки на теплоходе "Ривер Лаунж" (River Lounge)</span></div>              </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <section class="poster">
+            <div class="container">
+                <h1 class="poster__title">Речные прогулки на теплоходе "Ривер&nbsp;Лаундж"</h1>
+            </div>
+        </section>
+        <!--                    todo сделать иконки бекграундом-->
+        <div class="container">
+            <div class="icons-row">
+                <div class="icons-row__column">
+                    <figure class="icons-row__item">
+                        <div class="icons-row__icon">
+                            <img src="img/icons/image-01.png" alt="Отдельный столик">
+                        </div>
+                        <figcaption><p>Отдельный</p><p>столик</p></figcaption>
+                    </figure>
+                </div>
+                <div class="icons-row__column">
+                    <figure class="icons-row__item">
+                        <div class="icons-row__icon">
+                            <img src="img/icons/image-02.png" alt="Меню от шеф-повара">
+                        </div>
+                        <figcaption><p>Меню от шеф-</p><p>повара</p></figcaption>
+                    </figure>
+                </div>
+                <div class="icons-row__column">
+                    <figure class="icons-row__item">
+                        <div class="icons-row__icon">
+                            <img src="img/icons/image-03.png" alt="Причал в центре">
+                        </div>
+                        <figcaption><p>Причал в </p><p>центре</p></figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <section class="slider">
-            <!--            slider-->
-            <div class="slider__body">
-                <!--                slider__item-->
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/01.jpg" src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/02.jpg" src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/03.jpg" src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/04.jpg" src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/05.jpg" src="" alt="">
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__img">
-                        <img data-lazy="img/gallery/06.jpg" src="" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="poster">
-            <div class="container">
-                <h1 class="poster__title">Официальная аренда теплохода "Ривер&nbsp;Лаундж"</h1>
-            </div>
-        </section>
-        <section class="advantages">
-            <div class="container">
-                <ul class="advantages__list">
-                    <li class="advantages__item">ПАНОРАМНОЕ ОСТЕКЛЕНИЕ САЛОНА</li>
-                    <li class="advantages__item">ПРЕМИУМ КЛАСС</li>
-                    <li class="advantages__item">ПОЛНОСТЬЮ ОТКРЫТАЯ ВЕРХНЯЯ ПАЛУБА</li>
-                </ul>
-            </div>
-        </section>
-        <section class="price-first">
-            <div class="price-first__body">
-                <div class="container">
-                    <h2 class="price-first__title title-h2">Стоимость аренды теплохода</h2>
-                    <div class="price-first__subtitle">на 5 часов с банкетом</div>
-                </div>
-                <div class="price-first__table-area table-area">
-                    <table class="table-area__table">
-                        <tr>
-                            <th>День недели</th>
-                            <th>Цена</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Понедельник</p>
-                                <p>Вторник</p>
-                                <p>Среда</p>
-                                <p>Четверг</p>
-                            </td>
-                            <td>275 000 Р</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Пятница</p>
-                                <p>Суббота</p>
-                                <p>Воскресенье</p>
-                            </td>
-                            <td>350 000 Р</td>
-                        </tr>
-                        <tr>
-                            <td>День Победы и День Города</td>
-                            <td>600 000 Р</td>
-                        </tr>
-                    </table>
-                    <div class="table-area__description">
-                        <p>Минимальная длительность аренды 5 часов.</p>
-                        <p>+ 10% от стоимости меню</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="request">
-            <div class="container">
-                <div class="request__body">
-                    <h2 class="request__title title-h2">Узнать условия у менеджера</h2>
-                    <form action="#" method="get" class="request__form">
-                        <div class="request__input">
-                            <label>
-                                <input type="text" placeholder="Дата мероприятия">
-                            </label>
-                        </div>
-                        <div class="request__input">
-                            <label>
-                                <input type="text" placeholder="Количество гостей ">
-                            </label>
-                        </div>
-                        <div class="request__input">
-                            <label>
-                                <input type="text" placeholder="Ваше имя*">
-                            </label>
-                        </div>
-                        <div class="request__input">
-                            <label>
-                                <input type="text" placeholder="Телефон*">
-                            </label>
-                        </div>
-                        <div class="request__button">
-                            <button type="submit" class="request__btn">отправить</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="price-second">
-            <div class="price-second__body">
-                <div class="container">
-                    <h2 class="price-second__title title-h2">Речные прогулки на теплоходе Ривер&nbsp;Лаундж</h2>
-                    <!--                    todo сделать иконки бекграундом-->
-                    <div class="price-second__row icons-row">
-                        <div class="icons-row__column">
-                            <figure class="icons-row__item">
-                                <div class="icons-row__icon">
-                                    <img src="img/icons/image-01.png" alt="Отдельный столик">
-                                </div>
-                                <figcaption><p>Отдельный</p><p>столик</p></figcaption>
-                            </figure>
-                        </div>
-                        <div class="icons-row__column">
-                            <figure class="icons-row__item">
-                                <div class="icons-row__icon">
-                                    <img src="img/icons/image-02.png" alt="Меню от шеф-повара">
-                                </div>
-                                <figcaption><p>Меню от шеф-</p><p>повара</p></figcaption>
-                            </figure>
-                        </div>
-                        <div class="icons-row__column">
-                            <figure class="icons-row__item">
-                                <div class="icons-row__icon">
-                                    <img src="img/icons/image-03.png" alt="Причал в центре">
-                                </div>
-                                <figcaption><p>Причал в </p><p>центре</p></figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-second__table-area table-area">
-                    <table class="table-area__table">
-                        <tr>
-                            <th>Название</th>
-                            <th>Длительность</th>
-                            <th>Цена</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Прогулка по Москве-реке</p>
-                                <p>от Киевского вокзала</p>
-                                <p><span>12:00, 13:30, 17:30, 19:30</span></p>
 
-                            </td>
-                            <td>2 часа 10 мин.</td>
-                            <td>175-550Р</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Прогулка по Москве-реке</p>
-                                <p>от Киевского вокзала</p>
-                                <p><span>12:00, 13:30, 17:30, 19:30</span></p>
-                            </td>
-                            <td>2 часа 10 мин.</td>
-                            <td>175-550Р</td>
-                        </tr>
-                    </table>
-                    <div class="table-area__description">
-                        <p>Минимальная длительность аренды 5 часов.</p>
-                        <p>+ 10% от стоимости меню</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
     </div>
 </div>
 <!-- Подключаем jQuery -->

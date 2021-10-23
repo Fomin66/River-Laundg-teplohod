@@ -89,7 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 .over-header {
   padding-top: 10px;
   z-index: 10;
-  transition: all 0.5s ease 0s;
+  opacity: 1;
+  transition: all 1s ease 0s;
+  transition: opacity 0.5s ease 1s;
 }
 .over-header__row {
   display: flex;
@@ -145,6 +147,10 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+.over-header_active {
+  opacity: 0;
+  transition: opacity 0s ease 0s;
 }
 .over-header_active * {
   font-size: 0;
@@ -494,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 140px 30px 30px;
+    padding: 100px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
@@ -632,6 +638,9 @@ body.lock {
 .advantages__item {
   margin-bottom: 15px;
 }
+.advantages__item::marker {
+  display: none;
+}
 .advantages__item:last-child {
   margin-bottom: 0;
 }
@@ -658,6 +667,7 @@ body.lock {
   font-size: 18px;
   line-height: 1.5;
   font-style: italic;
+  font-family: lato, sans-serif;
 }
 .table-area__table th {
   background-color: #00a2d1;
@@ -774,6 +784,15 @@ body.lock {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.wrap-bot-header_in-ride {
+  padding-bottom: 5px;
+  border-bottom: #9fdced solid 2px;
+}
+.wrap-bot-header_in-ride .wrap #breadcrumbs > h2 {
+  overflow: hidden;
+  height: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
