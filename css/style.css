@@ -90,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 10px;
   z-index: 10;
   opacity: 1;
-  transition: all 1s ease 0s;
   transition: opacity 0.5s ease 1s;
 }
 .over-header__row {
