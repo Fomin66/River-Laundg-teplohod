@@ -79,6 +79,12 @@ body{
     font-weight: 700;
     line-height: 1.5;
   }
+  @media (max-width: 400px){
+    padding: 8px 0;
+    &__title{
+      font-size: 18px;
+    }
+  }
 }
 //==============================================
 .advantages{
@@ -96,14 +102,20 @@ body{
     line-height: 1.5;
   }
   //
-  &__item{
+  &__item,{
     margin-bottom: 15px;
     //todo разобраться как убрать маркер с !important
     &::marker{
-      display: none;
+      display: none !important;
+      list-style-image: none !important;
     }
     &:last-child{
       margin-bottom: 0;
+    }
+  }
+  @media (max-width: 400px){
+    &__list{
+      font-size: 10px;
     }
   }
 }
@@ -140,6 +152,7 @@ body{
       padding: 10px 15px;
       @media (max-width: 400px){
         text-align: center;
+        font-size: 14px;
       }
     }
     td{
@@ -148,8 +161,8 @@ body{
         font-size: 0.8em;
       }
       @media (max-width: 400px) {
-        //width: 50%;
         text-align: center;
+        font-size: 14px;
       }
     }
     tr {
@@ -167,6 +180,9 @@ body{
     color: white;
     text-align: center;
     padding: 10px 0;
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
   }
 }
 //=====================================================
@@ -206,6 +222,11 @@ body{
     padding: 8px 100px;
     border-radius: 4px;
   }
+  @media (max-width: 400px) {
+    &__btn{
+      padding: 8px 50px;
+    }
+  }
 }
 //=====================================================
 .price-second{
@@ -224,6 +245,10 @@ body{
   font-weight: bold;
   line-height: 1.5;
   padding-bottom: 10px;
+  @media (max-width: 400px){
+    font-size: 16px;
+    padding-bottom: 0;
+  }
 }
 .icons-row{
   max-width: 650px;
@@ -253,16 +278,6 @@ body{
     }
   }
 }
-//========++++Стили страницы прогулки++++++==========
-.wrap-bot-header_in-ride{
-  padding-bottom: 5px;
-  border-bottom: #9fdced solid 2px;
-  .wrap #breadcrumbs>h2{
-    overflow: hidden;
-    height: 1px;
-  }
-}
-
 
 
 //</Основной блок>=====================================================

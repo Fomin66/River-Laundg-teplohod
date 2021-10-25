@@ -20,15 +20,37 @@
 <!-- Отображаемое тело страницы -->
 <body>
 <div class="wrapper">
-    <header class="header">
+    <div class="over-header over-header_ride-page">
+        <div class="container">
+            <div class="over-header__row">
+                <div class="over-header__column">
+                    <div class="over-header__item">
+                        <a class="over-header__phone" href="tel:+79261503536">8-926-150-35-36</a>
+                        <a class="over-header__btn" href="#">Аренда</a>
+                    </div>
+                </div>
+                <div class="over-header__column">
+                    <div class="over-header__logo logo_low">
+                        <img src="img/logo.png" alt='Теплоход "Ривер Лаундж"'>
+                    </div>
+                </div>
+                <div class="over-header__column">
+                    <div class="over-header__item">
+                        <a class="over-header__phone" href="tel:+79850348992">8-985-034-89-92</a>
+                        <a class="over-header__btn" href="ride.html">Билеты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header header_ride-page">
         <div class="header__container">
-            <div class="header__logo">
-<!--                todo вынести в блок-->
-                <div class="over-header__logo">
+            <div class="header__column header__logo">
+                <div class="logo-low">
                     <img src="img/logo.png" alt='Теплоход "Ривер Лаундж"'>
                 </div>
             </div>
-            <div class="header__menu menu">
+            <div class="header__column header__menu menu">
                 <div class="menu__icon">
                     <button class="c-hamburger c-hamburger--htx">
                         <span>toggle menu</span>
@@ -45,7 +67,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="header__item"></div>
+            <div class="header__column header__item">
+                <a class="over-header__phone" href="tel:+79261503536">8-926-150-35-36</a>
+            </div>
         </div>
         <div class="wrap-wid wrap-bot-header_in-ride">
             <div class="wrap">

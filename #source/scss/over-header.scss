@@ -1,6 +1,6 @@
 .over-header{
   padding-top: 10px;
-z-index: 10;
+  z-index: 10;
   opacity: 1;
   transition: opacity 0.5s ease 1s;
   &__row{
@@ -12,8 +12,6 @@ z-index: 10;
     position: relative;
     text-align: center;
     overflow: hidden;
-
-
   }
   &__item{
     display: flex;
@@ -34,7 +32,10 @@ z-index: 10;
   }
   @media (max-width: 400px)  {
     &__phone{
-      font-size: 14px;
+      font-size: 12px;
+    }
+    &__btn{
+      font-size: 12px;
     }
   }
   &__btn{
@@ -49,18 +50,9 @@ z-index: 10;
   }
   &__logo{
     padding: 0 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    img{
-      object-fit:contain;
-      width: 100%;
-      height: 100%;
-    }
   }
 &_active{
+  padding-top: 0;
   opacity: 0;
   transition: opacity 0s ease 0s;
    *{
@@ -69,6 +61,25 @@ z-index: 10;
     margin: 0;
   }
 }
+}
+.logo_low{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  img{
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+.over-header_ride-page{
+  display: none;
+//  Для ПК версии на странице прогулок
+   @media (min-width: 767px) {
+     display: block;
+   }
 }
 
 

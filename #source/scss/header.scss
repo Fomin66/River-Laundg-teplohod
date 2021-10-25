@@ -17,40 +17,71 @@
     justify-content: space-between;
     min-height: 50px;
     position: relative;
-  }
-  &__logo{
-    position: relative;
-    z-index: 5;
+
+    // Полоса по центру под меню на мобильной версии
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #9fdced;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      z-index: 3;
+    }
   }
 }
 .menu{
   &__icon{
-    display: none;
+    z-index: 5;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
   }
   &__body{
+    position: fixed;
+    top: 0;
+    left: -100%;
     width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 100px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
     &_active{
-      .menu{
+      left: 0;
+      &:before{
+        content: '';
+        position: fixed;
+        width: 100%;
         top: 0;
+        left: 0;
+        height: 50px;
+        background-color: #fff;
+        z-index: 2;
       }
     }
   }
   &__list{
     transition: all 0.5s ease 0s;
-    &>li {
+    &>li{
       position: relative;
       margin: 0 0 5px 0;
-      &:last-child{}
       background: #00a2d1;
       border-radius: 5px;
       cursor: pointer;
+      &:last-child{
+        margin: 0;
+      }
       &:hover{
         text-decoration: underline;
       }
-      & > a {
+      &>a{
         display: block;
         color: #fff;
-        font-size: 18px;
+        font-size: 24px;
         width: 100%;
         padding: 7px 0;
         border-radius: 0;
@@ -60,15 +91,40 @@
       }
     }
   }
+  //&__body{
+  //  &_active{
+  //    .menu{
+  //      top: 0;
+  //    }
+  //  }
+  //}
+
 }
+//ПК версия
 @media (min-width: 767px) {
+  .header__container:before{
+    display: none;
+  }
   .menu{
+    &__body{
+      position: relative;
+      left: 0;
+      height: auto;
+      padding: 0;
+    }
+    &__icon{
+      display: none;
+    }
     &__list{
       display: flex;
       align-items: center;
       padding: 0 20px;
+      margin-left: 0;
       &>li{
         background-color: #fff;
+        &:last-child{
+          margin-bottom: 5px;
+        }
         &>a{
           color: black;
           display: block;
@@ -83,51 +139,87 @@
     }
   }
 }
-//Мобильная версия
-@media (max-width: 767px){
-.header__container{
-  //полоса под иконкой меню
-  &:before {
-    content: '';
-    display: block;
+//========++++Стили страницы прогулки++++++==========
+.header_ride-page{
+  padding-top: 15px;
+  transition: all 0.5s ease 0s;
+  &.header_active{
+    padding: 0;
+  }
+  .header__container{
+    padding-bottom: 15px;
+    border-bottom: #9fdced solid 2px;
+    &:before{
+      display: none;
+    }
+  }
+  .header__column{
+    flex: 0 0 33.333%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  .header__logo{
     width: 100%;
-    height: 2px;
-    background-color: #9fdced;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    z-index: 3;
+    height: 100%;
+  }
+  .header__menu{
+
+
+    &__list{
+      margin: 0;
+    }
+  }
+  .header__item{
+
+  }
+  .wrap-bot-header_in-ride{
+    line-height: 1;
+    .wrap>#breadcrumbs{
+      padding-top: 0;
+      .breadcrumb{
+        font-size: 10px;
+        &>span>a{
+          font-size: 10px;
+          color: #00a2d1;
+        }
+      }
+    }
+    @media (min-width: 760px) {
+      line-height: 1;
+      .wrap>#breadcrumbs{
+        padding-top: 0;
+        .breadcrumb{
+          font-size: 14px;
+          &>span>a{
+            font-size: 14px;
+            color: #00a2d1;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 767px){
+    padding-top: 0;
+    .header__container{
+      padding-bottom: 0;
+    }
+    .header__logo, .header__item{
+      display: none;
+    }
+    .header__column{
+      flex: 0 1 auto;
+      margin: 0 auto;
+    }
   }
 }
-.menu{
-    &__icon{
-      z-index: 5;
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-    }
-    &__body{
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 100px 30px 30px;
-      transition: left 0.3s ease 0s;
-      overflow: auto;
-      &_active{
-        left: 0;
-      }
-    }
-    &__list>li{
-      &:last-child{
-        margin: 0;
-      }
-      &>a{
-        font-size: 24px;
-      }
-    }
+.wrap-bot-header_in-ride{
+  padding: 5px 0;
+  border-bottom: #9fdced solid 2px;
+  .wrap #breadcrumbs>h2{
+    overflow: hidden;
+    height: 1px;
+    margin: 0;
+    font-size: 0;
   }
 }
