@@ -417,11 +417,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: 10;
   background-color: #fff;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .header__container {
   max-width: 1130px;
-  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -440,6 +439,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   left: 50%;
   z-index: 3;
+}
+.header__menu {
+  text-align: center;
+}
+.header__item {
+  text-align: right;
 }
 
 .menu__icon {
@@ -538,14 +543,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .header_ride-page {
-  padding-top: 15px;
+  padding-top: 10px;
   transition: all 0.5s ease 0s;
 }
 .header_ride-page.header_active {
   padding: 0;
 }
 .header_ride-page .header__container {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: #9fdced solid 2px;
 }
 .header_ride-page .header__container:before {
@@ -554,7 +559,6 @@ h1, h2, h3, h4, h5, h6 {
 .header_ride-page .header__column {
   flex: 0 0 33.333%;
   position: relative;
-  text-align: center;
   overflow: hidden;
 }
 .header_ride-page .header__logo {
@@ -563,6 +567,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header_ride-page .header__menu__list {
   margin: 0;
+}
+.header_ride-page .header__phone {
+  display: inline-block;
+  padding: 3px;
+  font-size: 11px;
+}
+.header_ride-page .header__phone_white {
+  color: #000;
+  background-color: #ffffff;
+  border: #00a2d1 solid 2px;
+}
+.header_ride-page .header__phone_blue {
+  color: #fff;
+  background-color: #00a2d1;
 }
 .header_ride-page .wrap-bot-header_in-ride {
   line-height: 1;
