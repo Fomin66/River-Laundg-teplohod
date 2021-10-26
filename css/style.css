@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 1130px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -947,6 +947,24 @@ body.lock {
     font-size: 14px;
     color: #00a2d1;
   }
+}
+
+.views .container {
+  border: #8E8888 solid 1px;
+  margin: 0 3px;
+}
+.views .container .views-row {
+  display: flex;
+  flex-direction: column;
+}
+.views .container .views-row .views-field-field-photo .skos-img a {
+  height: 100%;
+  width: 100%;
+}
+.views .container .views-row .views-field-field-photo .skos-img a > img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

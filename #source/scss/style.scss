@@ -21,7 +21,7 @@ $fontfamily:lato,sans-serif;
 //<Основная сетка>======================================================================================================
 .container{
   max-width: 1130px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
   //border: red solid 1px;
 }
@@ -277,6 +277,7 @@ body{
     }
   }
 }
+// Cтиль хлебных крошек
 .wrap-bot-header{
   padding: 5px 10px;
   .wrap{
@@ -322,18 +323,30 @@ body{
 
 }
 .views{
-  //.logo_low{
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  height: 100%;
-  //  width: 100%;
-  //  &>img{
-  //    object-fit:contain;
-  //    width: 100%;
-  //    height: 100%;
-  //  }
-  //}
+  .container{
+    border: #8E8888 solid 1px;
+    margin: 0 3px;
+    .views-row{
+      display: flex;
+      flex-direction: column;
+      .views-field-field-photo{
+        .skos-img{
+          a{
+            height: 100%;
+            width: 100%;
+            &>img{
+              object-fit:contain;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
 }
 
 //</Основной блок>=====================================================
