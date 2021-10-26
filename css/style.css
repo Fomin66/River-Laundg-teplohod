@@ -446,6 +446,9 @@ h1, h2, h3, h4, h5, h6 {
 .header__item {
   text-align: right;
 }
+.header_active .header__item {
+  opacity: 0;
+}
 
 .menu__icon {
   z-index: 5;
@@ -582,34 +585,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: #00a2d1;
 }
-.header_ride-page .wrap-bot-header_in-ride {
-  line-height: 1;
-}
-.header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs {
-  padding-top: 0;
-}
-.header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb {
-  font-size: 10px;
-}
-.header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb > span > a {
-  font-size: 10px;
-  color: #00a2d1;
-}
-@media (min-width: 760px) {
-  .header_ride-page .wrap-bot-header_in-ride {
-    line-height: 1;
-  }
-  .header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs {
-    padding-top: 0;
-  }
-  .header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb {
-    font-size: 14px;
-  }
-  .header_ride-page .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb > span > a {
-    font-size: 14px;
-    color: #00a2d1;
-  }
-}
 @media (min-width: 767px) {
   .header_ride-page {
     padding-top: 0;
@@ -624,17 +599,6 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 1 auto;
     margin: 0 auto;
   }
-}
-
-.wrap-bot-header_in-ride {
-  padding: 5px 0;
-  border-bottom: #9fdced solid 2px;
-}
-.wrap-bot-header_in-ride .wrap #breadcrumbs > h2 {
-  overflow: hidden;
-  height: 1px;
-  margin: 0;
-  font-size: 0;
 }
 
 /* Слайдер */
@@ -939,6 +903,50 @@ body.lock {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.wrap-bot-header {
+  padding: 5px 10px;
+}
+.wrap-bot-header .wrap {
+  border-bottom: #9fdced solid 2px;
+  max-width: 1130px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.wrap-bot-header .wrap #breadcrumbs > h2 {
+  overflow: hidden;
+  height: 1px;
+  margin: 0;
+  font-size: 0;
+}
+.wrap-bot-header_in-ride {
+  line-height: 1;
+}
+.wrap-bot-header_in-ride .wrap > #breadcrumbs {
+  padding-top: 0;
+}
+.wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb {
+  font-size: 10px;
+}
+.wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb > span > a {
+  font-size: 10px;
+  color: #00a2d1;
+}
+@media (min-width: 760px) {
+  .wrap-bot-header_in-ride {
+    line-height: 1;
+  }
+  .wrap-bot-header_in-ride .wrap > #breadcrumbs {
+    padding-top: 0;
+  }
+  .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb {
+    font-size: 14px;
+  }
+  .wrap-bot-header_in-ride .wrap > #breadcrumbs .breadcrumb > span > a {
+    font-size: 14px;
+    color: #00a2d1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

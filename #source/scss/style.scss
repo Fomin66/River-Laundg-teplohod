@@ -30,7 +30,6 @@ $fontfamily:lato,sans-serif;
 //<Подключение файлов стилей и элементов>===========================================================================
 @import "over-header";
 @import "header";
-@import "menu";
 @import "slider-slick";
 //@import "footer";
 //</Подключение файлов стилей и элементов>=====================================================
@@ -277,6 +276,50 @@ body{
       height: 100%;
     }
   }
+}
+.wrap-bot-header{
+  padding: 5px 10px;
+  .wrap{
+    border-bottom: #9fdced solid 2px;
+    max-width: 1130px;
+    padding: 0 5px;
+    margin: 0 auto;
+    #breadcrumbs>h2{
+      overflow: hidden;
+      height: 1px;
+      margin: 0;
+      font-size: 0;
+    }
+  }
+  &_in-ride{
+    line-height: 1;
+    .wrap>#breadcrumbs{
+      padding-top: 0;
+      .breadcrumb{
+        font-size: 10px;
+        &>span>a{
+          font-size: 10px;
+          color: #00a2d1;
+        }
+      }
+    }
+    @media (min-width: 760px) {
+      line-height: 1;
+      .wrap>#breadcrumbs{
+        padding-top: 0;
+        .breadcrumb{
+          font-size: 14px;
+          &>span>a{
+            font-size: 14px;
+            color: #00a2d1;
+          }
+        }
+      }
+    }
+  }
+}
+.content_ride-page {
+
 }
 .views{
   //.logo_low{
