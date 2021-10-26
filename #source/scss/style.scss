@@ -249,6 +249,13 @@ body{
     padding-bottom: 0;
   }
 }
+.title-h3{
+  text-align: center;
+  &>a{
+    color: #000;
+    text-decoration: underline;
+  }
+}
 .icons-row{
   max-width: 650px;
   margin: 0 auto;
@@ -329,6 +336,9 @@ body{
     .views-row{
       display: flex;
       flex-direction: column;
+      .views-field-title{
+        padding-top: 5px;
+      }
       .views-field-field-photo{
         .skos-img{
           a{
